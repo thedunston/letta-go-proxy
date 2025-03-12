@@ -4,6 +4,8 @@ Go proxy server for Letta API server.
 
 ## Build
 ```
+go mod init pproxy
+go mod tidy
 go build .
 ```
 
