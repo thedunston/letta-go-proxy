@@ -6,7 +6,8 @@ Go proxy server for Letta API server.
 ```
 go mod init pproxy
 go mod tidy
-go build .
+# Removes debug info to reduce the file size.
+go build -ldflags="-s -w" 
 ```
 
 ## Run the proxy
